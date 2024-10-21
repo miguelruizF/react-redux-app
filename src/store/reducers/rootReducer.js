@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
 import { filterReducer } from "./filterReducer";
-import { todosReducer } from "./todoReducer";
+import { todosReducer } from "./todosReducer";
 import { userReducer } from "./userReducer";
 
-
+//Function coming from redux
+//Combine reducers
 export const rootReducer = combineReducers(
     {
         // state name : reducer that will control it

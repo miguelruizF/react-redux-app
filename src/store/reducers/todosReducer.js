@@ -10,6 +10,7 @@ export const todosReducer = (state = initialState, action) => {
         case ADD_TODO:
             return [
                 ...state,
+                //Add a new item to the status
                 {
                     id: action.payload.id,
                     text: action.payload.text,
