@@ -1,5 +1,6 @@
 import { connect } from "react-redux"
 import { httpRequest } from "../../store/actions/asyncActions"
+import { LoginForm } from "../pure/LoginForm"
 
 
 const mapStateToProps = (state) => {
@@ -17,10 +18,10 @@ const mapDispatchToProps = (dispatch) => {
                 password: password
             }
             const url = 'https://reqres.in/api/login'
-            dispatch(httpRequest('POST', url, data));
+            dispatch(httpRequest('post', url, data));
         }
     }
 }
 
-const LoginFormContainer = connect(mapStateToProps, mapDispatchToProps)
+const LoginFormContainer = connect(mapStateToProps, mapDispatchToProps)(LoginForm)
 export default LoginFormContainer

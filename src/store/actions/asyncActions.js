@@ -8,7 +8,7 @@ export const login = (email, password) => {
         type: API_CALL_REQUEST,
         payload: {
             request: {
-                method: 'POST',
+                method: 'post',
                 url: 'https://reqres.in/api/login',
                 data: {
                     email: email,
