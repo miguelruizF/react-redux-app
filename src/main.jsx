@@ -4,9 +4,13 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { AppReduxSaga } from './AppReduxSaga'
 import { Provider } from 'react-redux'
+import { createAppAsyncStore } from './store/config/storeConfig'
+
+// We create the App Store
+let appAsyncStore = createAppAsyncStore();
 
 createRoot(document.getElementById('root')).render(
-  <Provider>
+  <Provider store={ appAsyncStore }>
     <StrictMode>
       {/* <App /> */}
       <AppReduxSaga />
