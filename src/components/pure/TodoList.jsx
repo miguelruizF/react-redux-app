@@ -2,7 +2,7 @@
 List to draw tasks: TodoList
 */
 import PropTypes from 'prop-types';
-import Todo from './Todo';
+import { Todo } from './Todo';
 
 
 export const TodoList = ({ todos, onTodoClick }) => {
