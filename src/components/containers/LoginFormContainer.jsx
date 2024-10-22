@@ -2,7 +2,6 @@ import { connect } from "react-redux"
 import { httpRequest } from "../../store/actions/asyncActions"
 import { LoginForm } from "../pure/LoginForm"
 
-
 const mapStateToProps = (state) => {
     return {
         loged: state.userState.loged,
