@@ -1,6 +1,6 @@
 //Creation of different filter options
 
-import FilterContainer from '../containers/FilterContainer';
+import { FilterContainer } from "../containers/FilterContainer";
 
 export const FilterOptions = () => {
 

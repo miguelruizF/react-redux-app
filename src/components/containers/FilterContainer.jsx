@@ -1,11 +1,13 @@
-// import React from 'react'
+
+//FilterContainer is responsible for communicating with the filter the action of sending the filter. 
 import { connect } from 'react-redux'
 import { setVisibilityFilter } from '../../store/actions/actions'
-import Filter from '../pure/Filter'
+import { Filter } from '../pure/Filter'
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        active: ownProps.filter === state.filterState 
+        //is active?
+        active: ownProps.filter === state.filterState //check if the current filter matches the text 
     }
 }
 
